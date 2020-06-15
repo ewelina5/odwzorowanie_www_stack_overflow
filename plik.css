@@ -1,0 +1,167 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col-1 > a {
+  /*błąd bo wpisałam wyższego rodzica, ale można to zapisać jeszcze w inny sposób*/
+  color: #979b9f;
+  font-size: 15px;
+  line-height: 40px;
+  /*warto zapamiętać*/
+}
+
+/* W Ten sposób \/
+  /* .link {
+    color: rgb(151, 155, 159);
+    font-size: 15px;
+  }
+  */
+.odstep {
+  margin-top: 8px;
+}
+
+.pasek-dol {
+  position: fixed;
+  width: 100%;
+}
+
+input {
+  /*resetujemy style w inpucie*/
+  border: none;
+  background-color: none;
+  outline: none;
+}
+
+.wyszukiwarka-jeden {
+  /*zrobiłam błąd bo wpisałam wyższą klasę*/
+  border: 1px solid #979b9f;
+  border-radius: 2px;
+  /* Zakrąglone rogi*/
+  color: #979b9f;
+  font-size: 12px;
+  padding: 7px;
+}
+
+.przycisk-log-in {
+  border-radius: 5px;
+  /* Zakrąglone rogi*/
+  background-color: white;
+  color: #0095ff;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.przycisk-sign-up {
+  border-radius: 5px;
+  /* Zakrąglone rogi*/
+  background-color: #0095ff;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.ask-questions {
+  border-radius: 5px;
+  /* Zakrąglone rogi*/
+  background-color: #0095ff;
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 15px;
+  right: -30px;
+  /*nie zadziałał bez pozycji*/
+  position: relative;
+}
+
+.blue {
+  color: #0095ff;
+}
+
+.dol {
+  margin-top: 15px;
+}
+
+.public {
+  text-transform: uppercase;
+  color: #979b9f;
+}
+
+hr {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 35px;
+}
+
+.-img {
+  display: inline-block;
+  background-size: cover;
+  background-position-y: -6px;
+  position: relative;
+  height: 40px;
+  width: 180px;
+  background-image: url("https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.svg?v=a010291124bf");
+}
+
+a.szary {
+  color: #979b9f;
+  font-size: 15px;
+}
+
+/* PSEUDO KLASA ::BEFORE, oznacza przestrzeń przed elementem stylowanym*/
+a.szary::before {
+  /*ATRYBUT CONTENT daje nam możliwość dopisania tekstu do tego punktora/ selektora */
+  content: "→";
+}
+
+a.czarny {
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.animacja {
+  position: absolute;
+  right: -150%;
+  width: 600px;
+  max-width: 200%;
+  height: 20px;
+  /*overflow: hidden; W SYTUACJI POWYŻEJ OVERFLOW NIE BĘDZIE PRZYDATNE TYLKO DLATEGO, ŻE NIE BĘDZIĘMY MIELI SYTUACJI W KTOREJ zawartość kolumny wykorczy poza 600px lub 20px wysokości */
+}
+
+.animacja:hover {
+  /*overflow: visible;*/
+}
+
+.minifont {
+  font-size: 10px !important;
+}
+
+.prawy-panel-naglowek {
+  background-color: #f7f1d5;
+  border: 1px solid #e6dfc6;
+}
+
+.prawy-panel-element {
+  background: #fff8dc;
+  border: 1px solid #e6dfc6;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}

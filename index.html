@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>STACK OVERFLOW</title>
+    <meta name="description" content="Stackoverflow" />
+
+    <!-- DODAJEMY/IMPORTUJEMY biblioteke odpowiedzialną za Bootstrap/kolumny w CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    <!-- DODAJEMY/IMPORTUJEMY biblioteke odpowiedzialną za Animacje w CSS -> Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="./plik.min.css" />
+    <!-- DOŁĄCZAM PLIK .CSS Z PACZKI FONT AWESOME (MUSZE PAMIĘTAĆ O ZAIMPORTOWANIU PLIKU ALL.JS NA KOŃCU HTMLA-->
+    <link rel="stylesheet" href="./all.css" />
+  </head>
+
+  <body>
+    <hr />
+    <!--tworzyłam www na Operę dla powiększenia na 75%-->
+    <div class="container-fluid">
+      <!---musimy wpisać bo div wypełni całego rodzica czyli body-->
+      <div class="row odstep">
+        <!--pierwszy wiersz-->
+        <div class="col-2"><!--zostawiamy pustą kolumnę--></div>
+        <div class="col-8">
+          <!--rozszerzamy tą kolumnę-->
+          <div class="row pasek-gorny">
+            <div class="col-2">
+              <span class="-img _glyph"></span>
+            </div>
+            <div class="col-1"><a href="#">Products</a></div>
+            <!--nie wiem dlaczego nie wyświetla szarego-->
+            <div class="col-1"><a href="#">Customers</a></div>
+            <!--nie wiem dlaczego nie wyświetla szarego-->
+            <div class="col-1"><a href="#">Use cases</a></div>
+            <!--nie wiem dlaczego nie wyświetla szarego-->
+            <div class="col-5">
+              <input
+                style="width: 100%"
+                class="wyszukiwarka-jeden"
+                placeholder="Search..."
+              />
+            </div>
+            <div class="col-1">
+              <button class="przycisk-log-in">Log in</button>
+            </div>
+            <div class="col-1">
+              <button class="przycisk-sign-up animated bounce">Sign up</button>
+            </div>
+          </div>
+
+          <div class="row dol">
+            <div class="col-1"><a href="#">Home</a></div>
+            <div class="col-9"></div>
+            <div class="col-2">
+              <button class="ask-questions">Ask questions</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="#" class="szary">Public</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="#" class="czarny"
+                ><i class="fas fa-globe-africa"></i> StackOverflow</a
+              >
+            </div>
+            <!--użyłam emojipedii-->
+            <!-- GOOGLE SEARCH : unicode html emoji -->
+          </div>
+          <!--tu rozpoczynam na zajęcia 9.12.19-->
+          <div class="row">
+            <div class="col-1">
+              <a href="#" style="margin-left: 15px;">Tags</a>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-3">
+              <div class="row prawy-panel-naglowek">
+                <div class="col-12"><p>BLOG</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+              <a href="#" style="margin-left: 15px;">Users</a>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-3">
+              <div class="row">
+                <div class="col-12 prawy-panel-element">
+                  <i class="far fa-comment-alt blue"></i>
+                  <a href="#">The Stack Overflow Podcast is Back!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+              <a href="#" style="margin-left: 15px;">Jobs</a>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-3">
+              <div class="row">
+                <div
+                  class="col-12 prawy-panel-element"
+                  style="position: relative; top: -15px;"
+                >
+                  <i class="far fa-comment-alt blue"></i>
+                  <a href="#"
+                    >Coding salaries in 2019. Updating the Stack Overflow Salary
+                    Calculator</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1">
+              <div class="row">
+                <div class="col-6">
+                  <a href="#" class="szary minifont">TEAMS</a>
+                </div>
+                <div class="col-6 animacja">
+                  <a href="#" class="szary minifont">What is programming?</a>
+                </div>
+              </div>
+            </div>
+            <!---to powinno być animacją-->
+            <div class="col-8"></div>
+            <div class="col-4"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-1"><a href="#">First 10 Free</a></div>
+            <div class="col-8"></div>
+            <div class="col-3">
+              <div
+                class="row prawy-panel-naglowek"
+                style="position: relative; top: -40px;"
+              >
+                <div class="col-12"><p>Featured on meta</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-8"></div>
+            <div class="col-3">
+              <div class="row">
+                <div
+                  class="col-12 prawy-panel-element"
+                  style="position: relative; top: -80px;"
+                >
+                  <i class="far fa-comment-alt blue"></i>
+                  <a href="#"
+                    >Official FAQ on gender pronouns and Code of Conduct
+                    changes</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-8"></div>
+            <div class="col-3">
+              <div class="row">
+                <div
+                  class="col-12 prawy-panel-element"
+                  style="position: relative; top: -80px;"
+                >
+                  <i class="far fa-comment-alt blue"></i>
+                  <a href="#"
+                    >Treshold experiment results: closing, editing and reopening
+                    all become more...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-8"></div>
+            <div class="col-3">
+              <div class="row">
+                <div
+                  class="col-12 prawy-panel-element"
+                  style="position: relative; top: -80px;"
+                >
+                  <i class="far fa-comment-alt blue"></i>
+                  <a href="#"
+                    >I'm resigning as a Stack Overflow Community Elected
+                    Moderator</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--nie ruszać-->
+        <div class="col-2"></div>
+        <!--zostawiamy pustą kolumnę-->
+      </div>
+    </div>
+
+    <!--DOŁĄCZENIE PLIKU SKRYPTOWEGO Z PACZKI FONTAWESOME : ALL.JS-->
+    <script src="all.js"></script>
+  </body>
+</html>
